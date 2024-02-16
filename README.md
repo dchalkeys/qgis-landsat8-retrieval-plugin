@@ -13,7 +13,9 @@ This plugin expedites the process of importing landsat8 imagery directly to your
     Navigate to your QGIS plugin directory:
    
     Linux: ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
+   
     Windows: C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\
+   
     macOS: ~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/
 
     Create a new directory for your plugin (e.g., dataRetrieval).
