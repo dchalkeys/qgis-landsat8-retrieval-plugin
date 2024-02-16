@@ -1,17 +1,10 @@
-# QGIS Minimalist Plugin Skeleton
+# QGIS Landsat8 Imagery Retrieval Plugin
 
-In various QGIS plugin tutorials you are told to use _Plugin Builder_ tool to create a skeleton for your plugin.
-It is surely helpful as it helps you kickstart your plugin with stuff like UI designer file, auto tests, docs, i18n, scripts and so on.
-
-This QGIS plugin is the complete opposite of a plugin built with _Plugin Builder_: it is a plugin skeleton cut down
-to the bare minimum that still results in a valid QGIS plugin. It consists of two files only: a text file with metadata and a Python file with a bit of code.
+This plugin allows users to import landsat 8 imagery from NASA's API directly into their project based on input latitude, longitude, dimension and date (YYYY-MM-DD).
 
 ## Why?
 
-For educational purposes, it is useful to understand how a very basic plugin could look like.
-
-For practical reasons, it is sometimes useful to create a single purpose plugin with the least amount of extra bells and whistles,
-so the code that actually does something is not hidden among generated boilerplate code.
+This plugin expedites importing landsat8 imagery to your project.
 
 ## How to use it?
 
@@ -19,10 +12,58 @@ so the code that actually does something is not hidden among generated boilerpla
   * e.g. Linux ```~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/minimal```
   * e.g. Windows ```C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\minimal```
   * e.g. macOS ```~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/minimal```
-2. Copy ```metadata.txt``` and ```__init__.py``` to that directory
-3. Start QGIS and enable the plugin (menu Plugins > Manager and Install Plugins...)
 
-Now you should see a "Go!" button in your "Plugins" toolbar (make sure it is enabled in menu Settings > Toolbars > Plugins).
+2. Copy Plugin Files:
 
-The next step is to change the metadata (e.g. plugin title and description) in ```metadata.txt``` and
-start adding your own code to ```__init__.py```. Have fun!
+Copy the following files to the newly created directory:
+mainPlugin.py: Contains the main functionality of the plugin.
+(Optional) metadata.txt: Contains metadata such as the plugin title and description.
+
+3. Enable the Plugin in QGIS:
+
+Start QGIS and go to the "Plugins" menu.
+Select "Manage and Install Plugins..." to open the Plugin Manager.
+Enable the Data Retrieval Plugin from the list of available plugins.
+
+4. Obtain an API key:
+
+Create a NASA Developer Account:
+
+Go to the NASA API Portal.
+Click on the "Sign Up" button to create a new account.
+Fill in the required information to register for a developer account.
+
+Verify Your Email:
+After signing up, you will receive an email from NASA to verify your email address.
+Click on the verification link provided in the email to verify your email address.
+
+Generate an API Key:
+Once your email is verified, log in to your NASA Developer account.
+Navigate to the API Keys section.
+Click on the "Generate API Key" button.
+Provide a name for your API key (e.g., "QGIS Landsat 8 Retrieval Plugin").
+Submit the form to generate your API key.
+Access Your API Key:
+
+After generating the API key, you will be provided with an API key string.
+Copy this API key and securely store it, as you will need it to authenticate your requests to the NASA APIs.
+
+6. Use the Plugin:
+
+Once enabled, you should see the "Retrieve Landsat 8 Imagery" button in your QGIS toolbar.
+If you don't see the toolbar, enable it in the QGIS settings: Settings > Toolbars > Plugins.
+Customize Plugin Metadata and Code:
+
+Open the metadata.txt file and update the plugin title and description as desired.
+Open the mainPlugin.py file and start adding your own code to customize the plugin's functionality.
+You can modify parameters, add additional features, or enhance the user interface based on your requirements.
+
+
+Enjoy!:
+
+Have fun exploring and customizing your Data Retrieval Plugin to suit your needs. Experiment with different parameters and functionalities to make the most out of your Earth Observation data integration with QGIS.
+By following these steps, you'll be able to set up and use your Data Retrieval Plugin in QGIS, allowing you to retrieve Landsat 8 imagery and customize it according to your preferences.
+
+
+
+
