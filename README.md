@@ -11,25 +11,26 @@ This plugin expedites the process of importing landsat8 imagery directly to your
 1. Create a New Python Plugin Directory:
 
     Navigate to your QGIS plugin directory:
+   
     Linux: ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
     Windows: C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\
     macOS: ~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/
 
     Create a new directory for your plugin (e.g., dataRetrieval).
 
-2. Copy Plugin Files:
+3. Copy Plugin Files:
 
     Copy the following files to the newly created directory:
     mainPlugin.py: Contains the main functionality of the plugin.
     (Optional) metadata.txt: Contains metadata such as the plugin title and description.
 
-3. Enable the Plugin in QGIS:
+4. Enable the Plugin in QGIS:
 
     Start QGIS and go to the "Plugins" menu.
     Select "Manage and Install Plugins..." to open the Plugin Manager.
     Enable the Data Retrieval Plugin from the list of available plugins.
 
-4. Obtaining an API Key:
+5. Obtaining an API Key:
 
     Visit the NASA API Portal website.
     Sign up for an account or log in if you already have one.
@@ -37,7 +38,7 @@ This plugin expedites the process of importing landsat8 imagery directly to your
     Generate a new API key by clicking on the "Generate API Key" button.
     Copy the generated API key to use it in the plugin.
 
-5. Use the Plugin:
+6. Use the Plugin:
 
     Once enabled, you should see the "Retrieve Landsat 8 Imagery" button in your QGIS toolbar.
     If you don't see the toolbar, enable it in the QGIS settings: Settings > Toolbars > Plugins.
