@@ -1,0 +1,3 @@
+*.py text=auto
+*.md text=auto
+*.txt text=auto

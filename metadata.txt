@@ -1,0 +1,9 @@
+[general]
+name=Data Retrieval
+description=Retreives landsat 8 imagery from NASA's api depending on user input
+about=QGIS plugin for retreiving landsat 8 imagery from NASA's API. Latitude, longitude, dimension, and date are all inout by the user.
+version=1.0
+qgisMinimumVersion=3.0
+author=Dylan Albrecht
+email=dchalkeys@gmail.com
+repository=https://github.com/dchalkeys/qgis-landsat8-retrieval-plugin
