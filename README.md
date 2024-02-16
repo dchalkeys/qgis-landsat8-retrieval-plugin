@@ -1,28 +1,58 @@
-# QGIS Minimalist Plugin Skeleton
+# QGIS Landsat8 Retrieval Plugin
 
-In various QGIS plugin tutorials you are told to use _Plugin Builder_ tool to create a skeleton for your plugin.
-It is surely helpful as it helps you kickstart your plugin with stuff like UI designer file, auto tests, docs, i18n, scripts and so on.
-
-This QGIS plugin is the complete opposite of a plugin built with _Plugin Builder_: it is a plugin skeleton cut down
-to the bare minimum that still results in a valid QGIS plugin. It consists of two files only: a text file with metadata and a Python file with a bit of code.
+This is a plugin for QGIS that enables the user to input latitude, longitude, dimension, and date to retrieve landsat8 imagery from NASA's API.
 
 ## Why?
 
-For educational purposes, it is useful to understand how a very basic plugin could look like.
-
-For practical reasons, it is sometimes useful to create a single purpose plugin with the least amount of extra bells and whistles,
-so the code that actually does something is not hidden among generated boilerplate code.
+This plugin expedites the process of importing landsat8 imagery directly to your QGIS project.
 
 ## How to use it?
 
-1. Create a new python plugin directory
-  * e.g. Linux ```~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/minimal```
-  * e.g. Windows ```C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\minimal```
-  * e.g. macOS ```~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/minimal```
-2. Copy ```metadata.txt``` and ```__init__.py``` to that directory
-3. Start QGIS and enable the plugin (menu Plugins > Manager and Install Plugins...)
+1. Create a New Python Plugin Directory:
 
-Now you should see a "Go!" button in your "Plugins" toolbar (make sure it is enabled in menu Settings > Toolbars > Plugins).
+2. Navigate to your QGIS plugin directory:
 
-The next step is to change the metadata (e.g. plugin title and description) in ```metadata.txt``` and
-start adding your own code to ```__init__.py```. Have fun!
+    Linux: ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
+    Windows: C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\
+    macOS: ~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/
+
+4. Create a new directory for your plugin (e.g., dataRetrieval).
+
+5. Copy Plugin Files:
+
+    Copy the following files to the newly created directory:
+    mainPlugin.py: Contains the main functionality of the plugin.
+    (Optional) metadata.txt: Contains metadata such as the plugin title and description.
+
+6. Enable the Plugin in QGIS:
+
+    Start QGIS and go to the "Plugins" menu.
+    Select "Manage and Install Plugins..." to open the Plugin Manager.
+    Enable the Data Retrieval Plugin from the list of available plugins.
+
+7. Obtaining an API Key:
+
+    Visit the NASA API Portal website.
+    Sign up for an account or log in if you already have one.
+    Once logged in, navigate to the API Key Management section.
+    Generate a new API key by clicking on the "Generate API Key" button.
+    Copy the generated API key to use it in the plugin.
+
+8. Use the Plugin:
+
+    Once enabled, you should see the "Retrieve Landsat 8 Imagery" button in your QGIS toolbar.
+    If you don't see the toolbar, enable it in the QGIS settings: Settings > Toolbars > Plugins.
+
+    Click on the "Retrieve Landsat 8 Imagery" button.
+
+    Input latitude, longitude, dimension, date (YYYY-MM-DD), and the API key obtained in step 7.
+
+    Customize Plugin Metadata and Code:
+
+    Open the metadata.txt file and update the plugin title and description as desired.
+    Open the mainPlugin.py file and start adding your own code to customize the plugin's functionality.
+    You can modify parameters, add additional features, or enhance the user interface based on your requirements.
+
+Enjoy!:
+
+Have fun exploring and customizing your Data Retrieval Plugin to suit your needs. Experiment with different parameters and functionalities to make the most out of your Earth Observation data integration with QGIS.
